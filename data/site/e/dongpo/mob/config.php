@@ -8,8 +8,8 @@ $mob_r=array();
 //dp.config.data
 $mob_r['mob_open']=1;
 $mob_r['msitepath']='/usr/share/nginx/html/m/';
-$mob_r['msiteurl']='http://m.ucbug.zj.92fangzhan.net/';
-$mob_r['newsurl']='http://ucbug.zj.92fangzhan.net/';
+$mob_r['msiteurl']='http://wap.abcdefg.xyz/';
+$mob_r['newsurl']='http://www.abcdefg.xyz/';
 $mob_r['gid']=2;
 $mob_r['ltp']=1;
 $mob_r['zkey']=1;
