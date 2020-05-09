@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<script src="/js/jquery1.7.js"></script>
+<script src="/js/lsbox.js"></script>
+</head>
+<body>
+<style>
+   /*......以下为弹出层专用样式区..start.....*/
+    input{    padding: 0px;}
+.yybox{width:460px; border:1px solid #409EC1; font-size:14px; background-color:#FFFFFF;}
+.yybox_title{width:460px; height:36px; background:url(/images/fudong_t_bg.jpg) repeat-x scroll 0 0 transparent; font-weight:bold;line-height:36px;}
+.yybox_title span{ margin-left:10px; color:#FFFFFF; float:left;}
+.yybox_title input{ background:url(/images/close.jpg) no-repeat; width:31px; height:36px; float:right; cursor:pointer;}
+.yybox_con{word-wrap:break-word; margin:15px;width:430px; font-size:14px; line-height:26px; text-align:center;}
+.yybo_but{ width:460px;height:40px; text-align:center;}
+.yybo_but input{ width:67px; height:24px; background:url(/images/queren_bg.jpg) no-repeat;line-height:24px; text-align:center; cursor:pointer; font-size:12px;}
+.yybox_ul{ width:430px; height:32px;}
+.yybox_ul .l{ width:130px; text-align:right; line-height:30px; list-style:none; float:left;}
+.yybox_ul .r{ width:300px; text-align:left; line-height:30px; list-style:none; float:left;}
+.yybox_ul input{ width:240px; height:28px; border:1px solid #CCCCCC;}
+.yybox_pack{width:360px; margin:10px 50px;}
+.yybox_pack div{width:360px; margin-top:16px;}
+.yybox_pack_input{width:358px; border:1px solid #CCCCCC; height:36px; font-size:16px; line-height:36px;}
+.yybox_pack_do{width:360px; text-align:center;}
+.yybox_pack_do input{width:112px; height:24px;list-style:none;background:url(/images/queren_bg1.jpg) no-repeat; line-height:26px; text-align:center; cursor:pointer; font-size:12px;}
+.yybox_vote{width:180px; height:35px; line-height:35px;background:url(/images/vote.gif) no-repeat; margin-left:90px; cursor:pointer; overflow:hidden;}
+/*......以上为弹出层专用样式区..end.......*/
+</style>
+ <script>
+ function jsCopy(){ 
+        var e=document.getElementById("code");//对象是content 
+        e.select(); //选择对象 
+        document.execCommand("Copy"); //执行浏览器复制命令
+
+       alert("已复制好，可贴粘。"); 
+    }
+function setpack(packid){
+	var geturl	= '/tool/getcard.php?enews=lq&id='+packid;
+	$.ajax({
+		type:'GET',
+		url:geturl,
+		success:function(txt){
+			var txts=txt.split('|');
+			if(txts[0] == 'error'){
+				showError(txts[1]);
+			}else if(txts[0] == 'success'){
+				yyBox.boxs(txts[1]);
+			}
+		}
+	});	
+}
+function taopack(packid){
+	var geturl	= '/tool/getcard.php?enews=tao&id='+packid;
+	$.ajax({
+		type:'GET',
+		url:geturl,
+		success:function(txt){
+			var txts=txt.split('|');
+			if(txts[0] == 'error'){
+				showError(txts[1]);
+			}else if(txts[0] == 'success'){
+				yyBox.boxs(txts[1]);
+			}
+		}
+	});	
+}
+</script>
+<a href="javascript:void(0);" onclick="javascript:setpack('1');">立即领取</a>
+<a href="javascript:void(0);" onclick="javascript:taopack('1');">淘号</a>
+</body>
+</html>

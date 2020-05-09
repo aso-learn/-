@@ -1,0 +1,18 @@
+<?php
+if(!defined('InEmpireCMS'))
+{
+	exit();
+}
+define('EmpireCMSDPConfig',TRUE);
+$dp_r=array();
+//dp.config.data
+$dp_r['path']='tag';
+$dp_r['pt']=0;
+$dp_r['tagstempid']=13;
+$dp_r['tagslistnum']=20;
+$dp_r['maxnum']=0;
+$dp_r['repagenum']=0;
+$dp_r['pagenum']=30;
+$dp_r['time']=1;
+//dp.config.data
+?>

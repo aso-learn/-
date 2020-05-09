@@ -1,0 +1,10 @@
+1、如在e/action/ListInfo.php,e/action/ShowInfo.php
+    e/action/ListInfo/index.php
+      载入
+        require(ECMS_PATH . 'e/extend/cacheadmin/MakeCache.php');
+   就OK，路径一定要正确，否则就是空白
+   其他动态页面同理，比如标题分类，搜索页面，tags页面，只要想缓存的页面加入上面代码
+
+2、缓存保存目录设置0777权限
+
+3、插件更新地址：http://www.92kaifa.com/html/plug/1159.html

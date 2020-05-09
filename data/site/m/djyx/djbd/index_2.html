@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8" />
+    <title>单机补丁-ucbug软件站</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="applicable-device" content="mobile" />
+
+    <link href="/skin/static/css/style.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="/skin/static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/skin/static/js/plugin.js"></script>
+    <script type="text/javascript" src="/skin/static/js/common.js"></script>
+
+</head>
+<body>
+
+<header class="headerTop">
+    <div class="navTop">
+        <div class="topInner">
+            <div class="logo">
+                <a href="/" title="首页"></a>
+            </div>
+            <div class="menu" id="sideMenu"></div>
+            <div class="search">
+                <form id="searchform" name="searchform" method="post" action="/e/search/index.php" target="_blank" class="bdcs-search-form">
+                    <div class="search-input">
+                        <input type="hidden" name="tbname" value="news">
+                        <input type="hidden" name="tempid" value="1">
+                        <input class="bdcs-search-form-input" type="text"  name="keyboard" id="keyboard" placeholder="请输入搜索的关键词" />
+                        <input type="hidden" name="show" value="title,smalltext" />
+                    </div>
+                    <div class="search-btn">
+                        <input type="submit" class="bdcs-search-form-submit" id="bdcs-search-form-submit" value="搜索" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <nav class="subTop" id="subTop" style="display:none;">
+        <ul class="subtop-list">
+            <li><a href="/xwzx/rmxw/" title="热门新闻"><i class="fa fa-file-text"></i><span>热门新闻</span></a></li>
+            <li><a href="/xwzx/rjjc/" title="软件教程"><i class="fa fa-file-text-o"></i><span>软件教程</span></a></li>
+            <li><a href="/xwzx/yxgl/" title="游戏攻略"><i class="fa fa-file-o"></i><span>游戏攻略</span></a></li>
+            <li><a href="/xwzx/sygl/" title="手游攻略"><i class="fa fa-gamepad"></i><span>手游攻略</span></a></li>
+            <li><a href="/sjrj/" title="手机软件"><i class="fa fa-mobile"></i><span>手机软件</span></a></li>
+            <li><a href="/sjyx/" title="手机游戏"><i class="fa fa-space-shuttle"></i><span>手机游戏</span></a></li>
+            <li><a href="/djyx/" title="单机游戏"><i class="fa fa-desktop"></i><span>单机游戏</span></a></li>
+            <li><a href="/msdt/" title="魔兽地图"><i class="fa fa-android"></i><span>魔兽地图</span></a></li>
+            <li><a href="/zhuanti/" title="专题专区"><i class="fa fa-tasks"></i><span>专题合集</span></a></li>
+            <li><a href="/tag/" title="TAG标签云"><i class="fa fa-tags"></i><span>标签云</span></a></li>
+            <li><a href="/gengxin/" title="最近更新"><i class="fa fa-list"></i><span>最近更新</span></a></li>
+            <li><a href="/sjsitemap.html" title="网站地图"><i class="fa fa-sitemap"></i><span>网站地图</span></a></li>
+        </ul>
+    </nav>
+</header>
+<section class="menuNav clearfix">
+    <div class="swiper-container inner">
+        <div class="swiper-wrapper box-inner">
+            <div class="swiper-slide item">
+                <a href="/" title="首页">首页</a>
+            </div>
+            <div class="swiper-slide item">
+                <a class="" href="/xwzx/rmxw/" title="/xwzx/rmxw/">资讯</a>
+            </div>
+            <div class="swiper-slide item">
+                <a class="" href="/xwzx/yxgl/" title="/xwzx/yxgl/">教程</a>
+            </div>
+            <div class="swiper-slide item">
+                <a class="cur" href="/djyx/" title="/djyx/">单机</a>
+            </div>
+            <div class="swiper-slide item">
+                <a class="" href="/sjyx/" title="/sjyx/">手游</a>
+            </div>
+            <div class="swiper-slide item">
+                <a class="" href="/zhuanti/" title="专题">专题</a>
+            </div>
+            <div class="swiper-slide item">
+                <a class="" href="/tag/" title="TAG标签云">标签</a>
+            </div>
+        </div>
+    </div>
+</section>
+<script>var mySwiper=new Swiper('.swiper-container',{loop:false,slidesPerView:'auto',loopedSlides:30})</script>
+<section class="subNav clearfix" style="display:block">
+    <div class="hd">
+        <h2><a href="/djyx/" title="单机游戏">单机游戏分类</a></h2>
+    </div>
+    <div class="inner">
+        <ul class="sub-list">
+                        <li ><a href="/djyx/sjyx/" title="射击游戏" title="射击游戏">射击游戏</a></li>
+                        <li ><a href="/djyx/mnjy/" title="模拟经营游戏" title="模拟经营游戏">模拟经营游戏</a></li>
+                        <li ><a href="/djyx/dzyx/" title="动作游戏" title="动作游戏">动作游戏</a></li>
+                        <li  class="cur"><a href="/djyx/djbd/" title="单机补丁" title="单机补丁">单机补丁</a></li>
+                        <li ><a href="/djyx/jsby/" title="角色扮演" title="角色扮演">角色扮演</a></li>
+                        <li ><a href="/djyx/clyx/" title="策略游戏" title="策略游戏">策略游戏</a></li>
+                        <div class="clearfix"></div>
+        </ul>
+    </div>
+</section>
+<section class="box-mod clearfix">
+    <div class="hd">
+        <h2>单机补丁</h2>
+        <small>资源列表</small>
+    </div>
+    <div class="inner mt10">
+        <ul class="app-list clearfix">
+           
+            
+            <li> <a href="/djyx/djbd/908.html" title="《幼儿园2》游侠LMAO汉化组汉化补丁V1.2">
+                <div class="ico">
+                    <img src="http://www.qiyetwo.com/d/file/titlepic/20190907/bv124din3yz.jpg" alt="《幼儿园2》游侠LMAO汉化组汉化补丁V1.2" />
+                </div> <h3>《幼儿园2》游侠LMAO汉化组汉化补丁V1.2</h3>
+                <div class="stars">
+                    <span class="star star3"></span>
+                </div>
+                <div class="att">
+                    免费版
+                    <em class="line">|</em>11.24 MB
+                    <em class="line">|</em>
+                    <i class="fa-calendar-o"></i>2019-08-05
+                </div> <span class="btn">下载</span> </a> </li>
+            
+            <li> <a href="/djyx/djbd/911.html" title="怪奇物语3游戏版游侠LMAO汉化组汉化补丁V2.1">
+                <div class="ico">
+                    <img src="http://www.qiyetwo.com/d/file/titlepic/20190907/nbpk4hhwttl.jpg" alt="怪奇物语3游戏版游侠LMAO汉化组汉化补丁V2.1" />
+                </div> <h3>怪奇物语3游戏版游侠LMAO汉化组汉化补丁V2.1</h3>
+                <div class="stars">
+                    <span class="star star3"></span>
+                </div>
+                <div class="att">
+                    免费版
+                    <em class="line">|</em>19.69 MB
+                    <em class="line">|</em>
+                    <i class="fa-calendar-o"></i>2019-07-30
+                </div> <span class="btn">下载</span> </a> </li>
+            
+            <li> <a href="/djyx/djbd/914.html" title="《生产线汽车工厂模拟》游侠LMAO汉化组汉化补丁V1.1">
+                <div class="ico">
+                    <img src="http://www.qiyetwo.com/d/file/titlepic/20190907/adiin4dcynm.jpg" alt="《生产线汽车工厂模拟》游侠LMAO汉化组汉化补丁V1.1" />
+                </div> <h3>《生产线汽车工厂模拟》游侠LMAO汉化组汉化补丁V1.1</h3>
+                <div class="stars">
+                    <span class="star star3"></span>
+                </div>
+                <div class="att">
+                    免费版
+                    <em class="line">|</em>22.04 MB
+                    <em class="line">|</em>
+                    <i class="fa-calendar-o"></i>2019-07-29
+                </div> <span class="btn">下载</span> </a> </li>
+            
+            <li> <a href="/djyx/djbd/917.html" title="《百万亚瑟王圣灵之血》游侠LMAO汉化组汉化补丁V1.0">
+                <div class="ico">
+                    <img src="http://www.qiyetwo.com/d/file/titlepic/20190907/fziyvisrlpm.jpg" alt="《百万亚瑟王圣灵之血》游侠LMAO汉化组汉化补丁V1.0" />
+                </div> <h3>《百万亚瑟王圣灵之血》游侠LMAO汉化组汉化补丁V1.0</h3>
+                <div class="stars">
+                    <span class="star star3"></span>
+                </div>
+                <div class="att">
+                    免费版
+                    <em class="line">|</em>14.66 MB
+                    <em class="line">|</em>
+                    <i class="fa-calendar-o"></i>2019-07-29
+                </div> <span class="btn">下载</span> </a> </li>
+            
+            <li> <a href="/djyx/djbd/920.html" title="《鬼哭邦》游侠LMAO汉化组汉化补丁V1.1">
+                <div class="ico">
+                    <img src="http://www.qiyetwo.com/d/file/titlepic/20190907/kcnrzol3xgp.jpg" alt="《鬼哭邦》游侠LMAO汉化组汉化补丁V1.1" />
+                </div> <h3>《鬼哭邦》游侠LMAO汉化组汉化补丁V1.1</h3>
+                <div class="stars">
+                    <span class="star star3"></span>
+                </div>
+                <div class="att">
+                    免费版
+                    <em class="line">|</em>15.57 MB
+                    <em class="line">|</em>
+                    <i class="fa-calendar-o"></i>2019-07-29
+                </div> <span class="btn">下载</span> </a> </li>
+            
+            <li> <a href="/djyx/djbd/923.html" title="《元素战争》 3DM汉化组汉化补丁v1.5">
+                <div class="ico">
+                    <img src="http://www.qiyetwo.com/d/file/titlepic/20190907/a1gfflblczg.jpg" alt="《元素战争》 3DM汉化组汉化补丁v1.5" />
+                </div> <h3>《元素战争》 3DM汉化组汉化补丁v1.5</h3>
+                <div class="stars">
+                    <span class="star star3"></span>
+                </div>
+                <div class="att">
+                    免费版
+                    <em class="line">|</em>20.76 MB
+                    <em class="line">|</em>
+                    <i class="fa-calendar-o"></i>2019-07-29
+                </div> <span class="btn">下载</span> </a> </li>
+            
+            <li> <a href="/djyx/djbd/926.html" title="《鹰之岛》游侠LMAO汉化组汉化补丁V1.0">
+                <div class="ico">
+                    <img src="http://www.qiyetwo.com/d/file/titlepic/20190907/mr1qclfq4l0.jpg" alt="《鹰之岛》游侠LMAO汉化组汉化补丁V1.0" />
+                </div> <h3>《鹰之岛》游侠LMAO汉化组汉化补丁V1.0</h3>
+                <div class="stars">
+                    <span class="star star3"></span>
+                </div>
+                <div class="att">
+                    免费版
+                    <em class="line">|</em>6.59 MB
+                    <em class="line">|</em>
+                    <i class="fa-calendar-o"></i>2019-07-20
+                </div> <span class="btn">下载</span> </a> </li>
+            
+            <li> <a href="/djyx/djbd/929.html" title="《进击的炽天使》游侠LMAO汉化组汉化补丁V2.1">
+                <div class="ico">
+                    <img src="http://www.qiyetwo.com/d/file/titlepic/20190907/ei3qiati23i.jpg" alt="《进击的炽天使》游侠LMAO汉化组汉化补丁V2.1" />
+                </div> <h3>《进击的炽天使》游侠LMAO汉化组汉化补丁V2.1</h3>
+                <div class="stars">
+                    <span class="star star3"></span>
+                </div>
+                <div class="att">
+                    免费版
+                    <em class="line">|</em>6.73 MB
+                    <em class="line">|</em>
+                    <i class="fa-calendar-o"></i>2019-07-18
+                </div> <span class="btn">下载</span> </a> </li>
+            
+            <li> <a href="/djyx/djbd/932.html" title="《星界边境》v1.4.2简体中文汉化补丁[星核汉化组]">
+                <div class="ico">
+                    <img src="http://www.qiyetwo.com/d/file/titlepic/20190907/fk25loxjxwt.jpg" alt="《星界边境》v1.4.2简体中文汉化补丁[星核汉化组]" />
+                </div> <h3>《星界边境》v1.4.2简体中文汉化补丁[星核汉化组]</h3>
+                <div class="stars">
+                    <span class="star star3"></span>
+                </div>
+                <div class="att">
+                    免费版
+                    <em class="line">|</em>6.90 MB
+                    <em class="line">|</em>
+                    <i class="fa-calendar-o"></i>2019-07-18
+                </div> <span class="btn">下载</span> </a> </li>
+            
+            <li> <a href="/djyx/djbd/909.html" title="《恶魔便便的进攻》3DM汉化组汉化补丁v1.0">
+                <div class="ico">
+                    <img src="http://www.qiyetwo.com/d/file/titlepic/20190907/ffttfxxtfiu.png" alt="《恶魔便便的进攻》3DM汉化组汉化补丁v1.0" />
+                </div> <h3>《恶魔便便的进攻》3DM汉化组汉化补丁v1.0</h3>
+                <div class="stars">
+                    <span class="star star3"></span>
+                </div>
+                <div class="att">
+                    免费版
+                    <em class="line">|</em>2.30 MB
+                    <em class="line">|</em>
+                    <i class="fa-calendar-o"></i>2019-07-17
+                </div> <span class="btn">下载</span> </a> </li>
+            
+        </ul>
+    </div>
+    <div class="pages clearfix mt10 ml10 mr10">
+        <a href="/djyx/djbd/index.html" class="prev">上一页</a><span class="rest">共3页：2/3</span><a href="/djyx/djbd/index_3.html" class="next">下一页</a>
+    </div>
+</section>
+<footer class="bottom clearfix">
+    <p><a href="http://m.ucbug.com/sitemap.html" title="网站地图">网站地图</a>|<a href="http://www.ucbug.com/" target="电脑版">访问电脑版</a>|<a href="http://m.ucbug.com/" title="ucbug手机站首页">返回首页</a></p>
+    <p><a href="http://www.miibeian.gov.cn/" target="_blank" rel="nofollow">皖ICP备18016672号</a></p>
+</footer>
+<div id="goTop" title="返回顶部"></div>
+</body>
+</html>

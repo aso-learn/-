@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>PotPlayer播放器使用方法及常见问题解决方法-ucbug软件站</title>
+    <meta name="keywords" content="PotPlayer播放器" />
+    <meta name="description" content="PotPlayer播放器使用方法及常见问题解决方法" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="applicable-device" content="mobile" />
+
+    <link href="/skin/static/css/style.css" type="text/css" rel="stylesheet" />
+
+    <script type="text/javascript" src="/skin/static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/skin/static/js/plugin.js"></script>
+    <script type="text/javascript" src="/skin/static/js/common.js"></script>
+
+</head>
+<body>
+
+<header class="headerTop">
+    <div class="navTop">
+        <div class="topInner">
+            <div class="logo">
+                <a href="/" title="首页"></a>
+            </div>
+            <div class="menu" id="sideMenu"></div>
+            <div class="search">
+                <form id="searchform" name="searchform" method="post" action="/e/search/index.php" target="_blank" class="bdcs-search-form">
+                    <div class="search-input">
+                        <input type="hidden" name="tbname" value="news">
+                        <input type="hidden" name="tempid" value="1">
+                        <input class="bdcs-search-form-input" type="text"  name="keyboard" id="keyboard" placeholder="请输入搜索的关键词" />
+                        <input type="hidden" name="show" value="title,smalltext" />
+                    </div>
+                    <div class="search-btn">
+                        <input type="submit" class="bdcs-search-form-submit" id="bdcs-search-form-submit" value="搜索" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <nav class="subTop" id="subTop" style="display:none;">
+        <ul class="subtop-list">
+            <li><a href="/xwzx/rmxw/" title="热门新闻"><i class="fa fa-file-text"></i><span>热门新闻</span></a></li>
+            <li><a href="/xwzx/rjjc/" title="软件教程"><i class="fa fa-file-text-o"></i><span>软件教程</span></a></li>
+            <li><a href="/xwzx/yxgl/" title="游戏攻略"><i class="fa fa-file-o"></i><span>游戏攻略</span></a></li>
+            <li><a href="/xwzx/sygl/" title="手游攻略"><i class="fa fa-gamepad"></i><span>手游攻略</span></a></li>
+            <li><a href="/sjrj/" title="手机软件"><i class="fa fa-mobile"></i><span>手机软件</span></a></li>
+            <li><a href="/sjyx/" title="手机游戏"><i class="fa fa-space-shuttle"></i><span>手机游戏</span></a></li>
+            <li><a href="/djyx/" title="单机游戏"><i class="fa fa-desktop"></i><span>单机游戏</span></a></li>
+            <li><a href="/msdt/" title="魔兽地图"><i class="fa fa-android"></i><span>魔兽地图</span></a></li>
+            <li><a href="/zhuanti/" title="专题专区"><i class="fa fa-tasks"></i><span>专题合集</span></a></li>
+            <li><a href="/tag/" title="TAG标签云"><i class="fa fa-tags"></i><span>标签云</span></a></li>
+            <li><a href="/gengxin/" title="最近更新"><i class="fa fa-list"></i><span>最近更新</span></a></li>
+            <li><a href="/sjsitemap.html" title="网站地图"><i class="fa fa-sitemap"></i><span>网站地图</span></a></li>
+        </ul>
+    </nav>
+</header>
+<section class="menuNav clearfix">
+    <div class="swiper-container inner">
+        <div class="swiper-wrapper box-inner">
+            <div class="swiper-slide item">
+                <a href="/" title="首页">首页</a>
+            </div>
+            <div class="swiper-slide item">
+                <a class="" href="/xwzx/rmxw/" title="/xwzx/rmxw/">资讯</a>
+            </div>
+            <div class="swiper-slide item">
+                <a class="" href="/xwzx/yxgl/" title="/xwzx/yxgl/">教程</a>
+            </div>
+            <div class="swiper-slide item">
+                <a class="" href="/djyx/" title="/djyx/">单机</a>
+            </div>
+            <div class="swiper-slide item">
+                <a class="" href="/sjyx/" title="/sjyx/">手游</a>
+            </div>
+            <div class="swiper-slide item">
+                <a class="" href="/zhuanti/" title="专题">专题</a>
+            </div>
+            <div class="swiper-slide item">
+                <a class="" href="/tag/" title="TAG标签云">标签</a>
+            </div>
+        </div>
+    </div>
+</section>
+<script>var mySwiper=new Swiper('.swiper-container',{loop:false,slidesPerView:'auto',loopedSlides:30})</script>
+<nav class="breadcrumbs">
+    <a href="/">首页</a>&nbsp;>&nbsp;<a href="/xwzx/">新闻资讯</a>&nbsp;>&nbsp;<a href="/xwzx/rjjc/">软件教程</a></nav>
+<article class="article clearfix">
+    <h1 class="title">PotPlayer播放器使用方法及常见问题解决方法</h1>
+    <div class="att">
+        <span class="time">2019-08-31 11:23:19</span>
+    </div>
+    <div class="art-content mt10 clearfix">
+        <p>PotPlayer是一款由 KMPlayer 的原作者姜勇希在跳槽到 Daum 公司后使用 C++ 完全重写的播放器。它基本上继承了 KMPlayer 方便的滤镜的管理系统。同时简化了内部的解码器体系。现在基本依靠 Bass 和 FFmpeg 系滤镜解决播放问题。Potplayer 具有DXVA 硬件解码以及多线程解码功能，使您能更流畅的观看高清影片。在相对小巧的体积下Potplayer 实现支持绝大多数视频格式的功能。美化主程序图标和关联图标，移除了聊天模块、VC库和连接，集成了real解码器，加入一款精美透明皮肤(开启皮肤D3D模式可实现)。体积小巧、界面简洁、功能强大，没有任何广告和垃圾信息，是本地视频播放器的最佳不二之选。同时汉化版抛弃了以往 KMP 制作时追求大而全的模式而改以精简的方式，使 Potplayer 成为真正的便携播放器!</p>
+<p align="center"><img alt="PotPlayer播放器使用方法及常见问题解决方法" height="413" src="http://www.qiyetwo.com/d/file/tineiron/20190907/f5hyxbcce3b.jpg" width="600" /></p>
+<p>PotPlayer就是KMPlayer作者换公司之后基于KMPlayer开发出来的。当年全能播放器领域最出名的数暴风影音和Kmplayer。Kmplayer站到了傻瓜播放器对面的队伍，适合有一定动手能力的玩家，它可以满足各类用户的定制需求，有丰富的参数设定可以满足你的要求，比如多字幕的挂载。本身也很全能，性能强悍。专业性尤其迎合了高清党的需求。Potplayer作为后辈，继承了Kmplayer的衣钵，而且有64bit版本，简直找不到更好的播放器。最大的优点&mdash;&mdash;不流氓!</p>
+<h3>软件特色</h3>
+<p>1、支持32位和64位系统</p>
+<p>2、内置硬件加速解码,支持MPEG1/2(IDCT/MoComp),WMV2(MoComp),WMV3(IDCT/MoComp),VC-1(IDCT/MoComp/VLD),H.264/AVC1(VLD)3、内置 E_AC3音频解码</p>
+<p>4、网络流媒体播放支持</p>
+<p>5、播放H264、VC1、MPEG I / II TS / PS 等编码,只要使用设定内建硬解都可顺利硬解,不用其它解码器6、可以较完整的支持 ASS/SSA 字幕,不会发生 KMP 中字幕被截断的问题,但依然支持不完全</p>
+<h3>使用方法</h3>
+<p>右击播放器窗口，从弹出的右键菜单中依次选择&ldquo;打开&rdquo;项，此时将展开&ldquo;打开&rdquo;子菜单项，从中选择相应的子项即可实现视频的播放操作。如图所示，当我们选择&ldquo;打开链接&rdquo;项时，将弹出如图所示的窗口，在此直接粘贴要播放的视频文件地址，点击&ldquo;确定&rdquo;即可进行在线视频观看操作。</p>
+<p align="center"><img alt="PotPlayer播放器使用方法及常见问题解决方法" height="371" src="http://www.qiyetwo.com/d/file/tineiron/20190907/skjhrxhlj2h.jpg" width="486" /></p>
+<p>高级设置菜单：右击播放器界面，从弹出的菜单中选择&ldquo;选择&rdquo;项，就可以打开&ldquo;高级选项&rdquo;菜单</p>
+<p align="center"><img alt="PotPlayer播放器使用方法及常见问题解决方法" height="526" src="http://www.qiyetwo.com/d/file/tineiron/20190907/keaihmdakxr.jpg" width="463" /></p>
+<p>播放器皮肤的更改:右击播放器窗口，在弹出的扩展菜单中选择&ldquo;皮肤&rdquo;项，就可以从其扩展面板中使用其它皮肤啦。</p>
+<p align="center"><img alt="PotPlayer播放器使用方法及常见问题解决方法" height="281" src="http://www.qiyetwo.com/d/file/tineiron/20190907/210ry32t35s.jpg" width="455" /></p>
+<p>播放列表的开启：右击播放器右下角的&ldquo;打开/隐藏播放列表&rdquo;按钮，就可以开启或隐藏播放列表啦。</p>
+<p align="center"><img alt="PotPlayer播放器使用方法及常见问题解决方法" height="360" src="http://www.qiyetwo.com/d/file/tineiron/20190907/y4mzjtzxepf.jpg" width="449" /></p>
+<h3>常见问题</h3>
+<p><strong>PotPlayer怎么视频截图?</strong></p>
+<p>1、下载安装potplayer中文绿色版，之后双击打开运行，然后点击右上角的菜单选项，接着在弹出的的快捷菜单中选择&ldquo;视频&rdquo;&mdash;&mdash;&ldquo;图像截取&rdquo;&mdash;&mdash;&ldquo;截存当前实画面&rdquo;选项可以看到，截图的快捷键是ctrl+alt+e;</p>
+<p align="center"><img alt="PotPlayer播放器使用方法及常见问题解决方法" height="289" src="http://www.qiyetwo.com/d/file/tineiron/20190907/3avumrnkln0.jpg" width="469" /></p>
+<p>2、接着返回我们播放的视频界面，看到自己喜欢的画面直接按下截图快捷键即可，也可以自定义快捷键。</p>
+<p align="center"><img alt="PotPlayer播放器使用方法及常见问题解决方法" height="413" src="http://www.qiyetwo.com/d/file/tineiron/20190907/b42iejid0cz.jpg" width="600" /></p>
+<p>3、最后我们可以还打开刚刚我们的菜单&ldquo;视频&rdquo;&mdash;&mdash;&ldquo;图像截取&rdquo;点击选择&rdquo;打开截图存档文件夹&ldquo;选项，点击打开就会看到我们的截图源文件了。你也可以点击菜单中的&rdquo;选择截图存档路径&ldquo;自定义设置截图存放位置也行，这个看自己的需求了。</p>
+<p align="center"><img alt="PotPlayer播放器使用方法及常见问题解决方法" height="496" src="http://www.qiyetwo.com/d/file/tineiron/20190907/hm5gl4hrqmu.jpg" width="600" /></p>
+<p><strong>PotPlayer怎么倍速播放?</strong></p>
+<p>想调节potplayer视频播放速度，你可以点击右下角的设置按钮，之后就会弹出一个&rdquo;控制窗口&ldquo;。然后鼠标点击切换至&rdquo;播放&ldquo;选项卡，在这里我们就可以设置播放速度了。可以减慢、加快或以默认等三种播放速度选择，想加速播放就点击一下&rdquo;加快&ldquo;选项就可以了。是不是很简单啊，如果还需要调节再次打开控制窗口设置就好了。</p>
+<p align="center"><img alt="PotPlayer播放器使用方法及常见问题解决方法" height="420" src="http://www.qiyetwo.com/d/file/tineiron/20190907/1bblffxavwu.jpg" width="600" /></p>    </div>
+    <div class="tags">
+        <i class="fa-tags"></i>
+                <a href="http://m.qiyetwo.com/tag/PotPlayerbofangqi/" title="PotPlayer播放器">PotPlayer播放器</a>
+            </div>
+</article>
+<section class="ad-mod bb10 clearfix">
+    
+</section>
+<section class="box-mod clearfix">
+    <div class="hd">
+        <h2>特色标签</h2>
+        <small>精彩合集，奇葩无下限</small>
+        <a class="more" href="/tag/" title="更多tag标签"><i></i>更多</a>
+    </div>
+    <div class="inner clearfix">
+        <ul class="tagShow clearfix">
+                        <li><a href="http://m.qiyetwo.com/tag/duowandnfhezi/" title="多玩dnf盒子">多玩dnf盒子</a></li>
+                        <li><a href="http://m.qiyetwo.com/tag/DNFbikefuzhugongju/" title="DNF必可辅助工具">DNF必可辅助工具</a></li>
+                        <li><a href="http://m.qiyetwo.com/tag/dnffuzhugongju/" title="dnf辅助工具">dnf辅助工具</a></li>
+                        <li><a href="http://m.qiyetwo.com/tag/dixiachengyuyongshifuzhu/" title="地下城与勇士辅助">地下城与勇士辅助</a></li>
+                        <li><a href="http://m.qiyetwo.com/tag/DNFfanganheipohuaishen3/" title="DNF仿暗黑破坏神3">DNF仿暗黑破坏神3</a></li>
+                        <li><a href="http://m.qiyetwo.com/tag/dnfdaboluo3jiemianbuding/" title="dnf大菠萝3界面补丁">dnf大菠萝3界面补丁</a></li>
+                        <li><a href="http://m.qiyetwo.com/tag/dnfwaigua/" title="dnf外挂">dnf外挂</a></li>
+                        <li><a href="http://m.qiyetwo.com/tag/dixiachengyuyongshidanjiban/" title="地下城与勇士单机版">地下城与勇士单机版</a></li>
+                        <li><a href="http://m.qiyetwo.com/tag/DNFdanjiban/" title="DNF单机版">DNF单机版</a></li>
+                        <li><a href="http://m.qiyetwo.com/tag/DNFdanjibanxiugaiqi/" title="DNF单机版修改器">DNF单机版修改器</a></li>
+                        <li><a href="http://m.qiyetwo.com/tag/dnfsongnpcliwudaquangongju/" title="dnf送npc礼物大全工具">dnf送npc礼物大全工具</a></li>
+                        <li><a href="http://m.qiyetwo.com/tag/dixiachengyuyongshiwaigua/" title="地下城与勇士外挂">地下城与勇士外挂</a></li>
+                        <li><a href="http://m.qiyetwo.com/tag/DNFbingyiqiangpaimaifuzhu/" title="DNF冰翼抢拍卖辅助">DNF冰翼抢拍卖辅助</a></li>
+                        <li><a href="http://m.qiyetwo.com/tag/DNFfuzhu/" title="DNF辅助">DNF辅助</a></li>
+                        <li><a href="http://m.qiyetwo.com/tag/265gDNFlianfagongju/" title="265gDNF连发工具">265gDNF连发工具</a></li>
+                        <li><a href="http://m.qiyetwo.com/tag/dnflianfachengxu/" title="dnf连发程序">dnf连发程序</a></li>
+                        <li><a href="http://m.qiyetwo.com/tag/dnflianfagongju/" title="dnf连发工具">dnf连发工具</a></li>
+                        <li><a href="http://m.qiyetwo.com/tag/dnfzidongshouhuogongju/" title="dnf自动收货工具">dnf自动收货工具</a></li>
+                        <li><a href="http://m.qiyetwo.com/tag/DNFzidongmiaopaimaijiaoben/" title="DNF自动秒拍卖脚本">DNF自动秒拍卖脚本</a></li>
+                        <li><a href="http://m.qiyetwo.com/tag/anjianjinglingjiaoben/" title="按键精灵脚本">按键精灵脚本</a></li>
+                        <li><a href="http://m.qiyetwo.com/tag/lianfagongju/" title="连发工具">连发工具</a></li>
+                        <li><a href="http://m.qiyetwo.com/tag/DNFdashifuzhu/" title="DNF大师辅助">DNF大师辅助</a></li>
+                        <li><a href="http://m.qiyetwo.com/tag/tgsdashifuzhu/" title="tgs大师辅助">tgs大师辅助</a></li>
+                    </ul>
+    </div>
+</section>
+<section class="box-mod clearfix">
+    <div class="hd">
+        <h2>相关文章</h2>
+    </div>
+    <div class="inner clearfix">
+        <ul class="text-list clearfix">
+                        <li class="-feeds-right"><a href="/xwzx/rjjc/1.html" title="怎么通过U盘魔术师制作PE启动盘系统"><p class="pic"><img src="http://www.qiyetwo.com/d/file/tineiron/20190907/lb5jzz20lwb.jpg" alt="怎么通过U盘魔术师制作PE启动盘系统" /></p><h3>怎么通过U盘魔术师制作PE启动盘系统</h3>
+                <div class="info">
+                    <span class="time"><i class="fa-calendar-o"></i>2019-09-05</span>
+                </div></a></li>
+                        <li class="-feeds-right"><a href="/xwzx/rjjc/4.html" title="浏览器突然跳出&quot;网页证书错误&quot;提示解决方法介绍"><p class="pic"><img src="http://www.qiyetwo.com/d/file/tineiron/20190907/abvd4bqolgq.png" alt="浏览器突然跳出&quot;网页证书错误&quot;提示解决方法介绍" /></p><h3>浏览器突然跳出&quot;网页证书错误&quot;提示解决方法介绍</h3>
+                <div class="info">
+                    <span class="time"><i class="fa-calendar-o"></i>2019-09-05</span>
+                </div></a></li>
+                        <li class="-feeds-right"><a href="/xwzx/rjjc/7.html" title="Git下载安装配置方法介绍"><p class="pic"><img src="http://www.qiyetwo.com/d/file/tineiron/20190907/l24clbnjnnd.png" alt="Git下载安装配置方法介绍" /></p><h3>Git下载安装配置方法介绍</h3>
+                <div class="info">
+                    <span class="time"><i class="fa-calendar-o"></i>2019-09-05</span>
+                </div></a></li>
+                        <li class="-feeds-right"><a href="/xwzx/rjjc/10.html" title="Adobe After Effects插件安装方法介绍"><p class="pic"><img src="http://www.qiyetwo.com/d/file/tineiron/20190907/ootixfvubup.jpg" alt="Adobe After Effects插件安装方法介绍" /></p><h3>Adobe After Effects插件安装方法介绍</h3>
+                <div class="info">
+                    <span class="time"><i class="fa-calendar-o"></i>2019-09-04</span>
+                </div></a></li>
+                        <li class="-feeds-right"><a href="/xwzx/rjjc/13.html" title="Wise Folder Hider软件隐藏文件功能使用方法介绍"><p class="pic"><img src="http://www.qiyetwo.com/d/file/tineiron/20190907/xgzixe2clgi.png" alt="Wise Folder Hider软件隐藏文件功能使用方法介绍" /></p><h3>Wise Folder Hider软件隐藏文件功能使用方法介绍</h3>
+                <div class="info">
+                    <span class="time"><i class="fa-calendar-o"></i>2019-09-02</span>
+                </div></a></li>
+                        <li class="-feeds-right"><a href="/xwzx/rjjc/16.html" title="怎么在PPT中插入视频文件"><p class="pic"><img src="http://www.qiyetwo.com/d/file/tineiron/20190907/rw5hwugr4pa.png" alt="怎么在PPT中插入视频文件" /></p><h3>怎么在PPT中插入视频文件</h3>
+                <div class="info">
+                    <span class="time"><i class="fa-calendar-o"></i>2019-08-31</span>
+                </div></a></li>
+                        <li class="-feeds-right"><a href="/xwzx/rjjc/22.html" title="录音啦(录音转文字软件)使用方法介绍"><p class="pic"><img src="http://www.qiyetwo.com/d/file/tineiron/20190907/kqpqf42ho4l.jpg" alt="录音啦(录音转文字软件)使用方法介绍" /></p><h3>录音啦(录音转文字软件)使用方法介绍</h3>
+                <div class="info">
+                    <span class="time"><i class="fa-calendar-o"></i>2019-08-30</span>
+                </div></a></li>
+                        <li class="-feeds-right"><a href="/xwzx/rjjc/25.html" title="Huawei LiteOS Studio下载安装教程介绍"><p class="pic"><img src="http://www.qiyetwo.com/d/file/titlepic/20190907/bvf44kb1sgd.png" alt="Huawei LiteOS Studio下载安装教程介绍" /></p><h3>Huawei LiteOS Studio下载安装教程介绍</h3>
+                <div class="info">
+                    <span class="time"><i class="fa-calendar-o"></i>2019-08-27</span>
+                </div></a></li>
+                        
+        </ul>
+    </div>
+</section>
+<footer class="bottom clearfix">
+    <p><a href="http://m.ucbug.com/sitemap.html" title="网站地图">网站地图</a>|<a href="http://www.ucbug.com/" target="电脑版">访问电脑版</a>|<a href="http://m.ucbug.com/" title="ucbug手机站首页">返回首页</a></p>
+    <p><a href="http://www.miibeian.gov.cn/" target="_blank" rel="nofollow">皖ICP备18016672号</a></p>
+</footer>
+<div id="goTop" title="返回顶部"></div>
+
+</body>
+</html>
