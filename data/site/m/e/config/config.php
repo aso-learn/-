@@ -9,11 +9,11 @@ $ecms_config=array();
 //数据库设置
 $ecms_config['db']['usedb']='mysql';	//数据库类型
 $ecms_config['db']['dbver']='5.0';	//数据库版本
-$ecms_config['db']['dbserver']='localhost';	//数据库登录地址
+$ecms_config['db']['dbserver']='mysql';	//数据库登录地址
 $ecms_config['db']['dbport']='';	//端口，不填为按默认
-$ecms_config['db']['dbusername']='ucbug';	//数据库用户名
-$ecms_config['db']['dbpassword']='c4s4H6m5';	//数据库密码
-$ecms_config['db']['dbname']='ucbug';	//数据库名
+$ecms_config['db']['dbusername']='cms';	//数据库用户名
+$ecms_config['db']['dbpassword']='##xxabcc';	//数据库密码
+$ecms_config['db']['dbname']='cms';	//数据库名
 $ecms_config['db']['setchar']='utf8';	//设置默认编码
 $ecms_config['db']['dbchar']='utf8';	//数据库默认编码
 $ecms_config['db']['dbtbpre']='www_92fangzhan_com_';	//数据表前缀

@@ -197,22 +197,52 @@ while($r=$empire->fetch($sql))
   <input name="repid" type="hidden" id="repid" value="0" />
   </form>
 </table>
-<footer class="footer clearfix">
-    <div class="link">
-        <a href="/">网站首页</a> |
-        <a href="/about.html" title="关于我们">关于本站</a> |
-        <a href="/xzbz.html" title="下载帮助">下载帮助</a> ｜
-        <a href="/xzsm.html" title="下载声明">下载声明</a> ｜
-        <a href="/rjfabu.html" title="软件发布">软件发布</a> ｜
-        <a href="/gghz.html" title="广告合作">广告合作</a> ｜
-        <a href="/yqlj.html" title="友情链接">友情链接</a>
-    </div>
-    <p><?=$public_r['add_www_92kaifa_com_dibu']?></p>
-    <p><a href="javascript:void(0);" target="_blank" rel="nofollow">备案编号：<?=$public_r['add_www_92kaifa_com_beianhao']?></a> </p>
-    <div style="width:300px;margin:0 auto; padding:20px 0;">
-        <a target="_blank" href="javascript:void(0);" rel="nofollow" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="/skin/static/images/beianicon.png" style="float:left;" /><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">皖公网安备 <?=$public_r['add_www_92kaifa_com_beianhao']?></p></a>
-    </div>
-    <p></p>
-</footer>
+<!-- 页脚 -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" class="search">
+<form action="/e/search/index.php" method="post" name="searchform" id="searchform">
+<table border="0" cellspacing="6" cellpadding="0">
+<tr>
+<td><strong>站内搜索：</strong>
+<input name="keyboard" type="text" size="32" id="keyboard" class="inputText" />
+<input type="hidden" name="show" value="title" />
+<input type="hidden" name="tempid" value="1" />
+<select name="tbname">
+<option value="news">新闻</option>
+<option value="download">下载</option>
+<option value="photo">图库</option>
+<option value="flash">FLASH</option>
+<option value="movie">电影</option>
+<option value="shop">商品</option>
+<option value="article">文章</option>
+<option value="info">分类信息</option>
+</select>
+</td>
+<td><input type="image" class="inputSub" src="/skin/default/images/search.gif" />
+</td>
+<td><a href="/search/" target="_blank">高级搜索</a></td>
+</tr>
+</table>
+</form>
+</td>
+</tr>
+<tr>
+<td>
+	<table width="100%" border="0" cellpadding="0" cellspacing="4" class="copyright">
+        <tr> 
+          <td align="center"><a href="/">网站首页</a> | <a href="#">关于我们</a> 
+            | <a href="#">服务条款</a> | <a href="#">广告服务</a> | <a href="#">联系我们</a> 
+            | <a href="#">网站地图</a> | <a href="#">免责声明</a> | <a href="/e/wap/" target="_blank">WAP</a></td>
+        </tr>
+        <tr> 
+          <td align="center">Powered by <strong><a href="http://www.phome.net" target="_blank">EmpireCMS</a></strong> 
+            <strong><font color="#FF9900">7.5</font></strong>&nbsp; &copy; 2002-2018 
+            <a href="http://www.digod.com" target="_blank">EmpireSoft Inc.</a></td>
+        </tr>
+	</table>
+</td>
+</tr>
+</table>
 </body>
 </html>

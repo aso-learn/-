@@ -7,7 +7,7 @@ define('EmpireCMSDPConfig',TRUE);
 $mob_r=array();
 //dp.config.data
 $mob_r['mob_open']=1;
-$mob_r['msitepath']='/wwwroot/ucbug/wwwroot/m/';
+$mob_r['msitepath']='/usr/share/nginx/html/m/';
 $mob_r['msiteurl']='http://m.ucbug.zj.92fangzhan.net/';
 $mob_r['newsurl']='http://ucbug.zj.92fangzhan.net/';
 $mob_r['gid']=2;
