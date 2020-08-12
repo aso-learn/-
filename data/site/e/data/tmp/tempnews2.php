@@ -150,7 +150,7 @@ $bqno++;
                 </div>
             </div>
             <article class="content" id="down-content">
-                <?=strstr($ecms_gr[newstext],'[!--empirenews.page--]')?'[!--newstext--]':$ecms_gr[newstext]?>
+                <?=$ecms_gr[newstext]?>
             </article>
             <div class="news-tags clearfix">
                 <span class="tt">标签</span>

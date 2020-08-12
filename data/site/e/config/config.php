@@ -150,7 +150,7 @@ $public_r=array('sitename'=>'583下载站 - 免费软件下载_绿色软件下�
 'KeySecret'=>'',
 'model'=>'',
 'SignName'=>'',
-'filetype'=>'|.gif|.jpg|.swf|.rar|.zip|.mp3|.wmv|.txt|.doc|',
+'filetype'=>'|.gif|.jpg|.swf|.rar|.zip|.mp3|.wmv|.txt|.doc|.png|',
 'filesize'=>2048,
 'relistnum'=>8,
 'renewsnum'=>100,
